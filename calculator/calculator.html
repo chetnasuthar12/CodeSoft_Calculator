@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator</title>
+        <link rel="stylesheet" href="calculator.css">
+    </head>
+    <body>
+        <div id="container">
+            <input id="display" readonly>
+            <div id="calc_buttons">
+                <button onclick="allClear('AC')" class="first_line">AC</button>
+                <button onclick="deleteOne('DE')"class="first_line">DE</button>
+                <button onclick="showInDisplay('%')"class="first_line">%</button>
+                <button onclick="showInDisplay('/')"class="last_line">/</button>
+                <button onclick="showInDisplay('7')">7</button>
+                <button onclick="showInDisplay('8')">8</button>
+                <button onclick="showInDisplay('9')">9</button>
+                <button onclick="showInDisplay('*')"class="last_line">x</button>
+                <button onclick="showInDisplay('4')">4</button>
+                <button onclick="showInDisplay('5')">5</button>
+                <button onclick="showInDisplay('6')">6</button>
+                <button onclick="showInDisplay('-')"class="last_line">-</button>
+                <button onclick="showInDisplay('1')">1</button>
+                <button onclick="showInDisplay('2')">2</button>
+                <button onclick="showInDisplay('3')">3</button>
+                <button onclick="showInDisplay('+')"class="last_line">+</button>
+                <button onclick="showInDisplay('0')">0</button>
+                <button onclick="showInDisplay('00')">00</button>
+                <button onclick="showInDisplay('.')">.</button>
+                <button onclick="calculate('=')"class="last_line">=</button>
+            </div>
+        </div>
+        <script src="calculator.js"></script>
+    </body>
+</html>
